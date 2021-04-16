@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    
+}
+
+#header {
+    width: 100%;
+    height: 56px;
+    background-color: #EE0033;
+}
+
+#search {
+    width: 25%;
+    border-radius: 20px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid white;
+
+    margin: 11px 0;
+
+}
+
+#search::placeholder {
+    font-size: 15px;
+}
