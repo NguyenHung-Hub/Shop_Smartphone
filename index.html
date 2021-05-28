@@ -7,13 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hoàng Hưng Mobile</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script> -->
+
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <script src="./assets/js/content.js" type="text/javascript"></script>
+
 </head>
 
 <body>
     <div id="main">
         <div id="header">
+            <div id="logo">
+                <img src="./assets/img/logo/logoS.png" alt="">
+                <label for="">&nbsp; Hoang Hung <span>Store</span></label>
+            </div>
             <div class="search">
                 <input type="text" placeholder="Tìm kiếm sản phẩm" class="txt-search">
                 <div class="btnSearch">
@@ -22,11 +41,478 @@
             </div>
 
             <div class="cart">
-                
+
                 <p><i class="ti-shopping-cart"></i> Giỏ hàng (0)</p>
             </div>
         </div>
+
+        <ul id="nav">
+            <li>
+                <a href="#">Điện thoại <i class="ti-angle-down"></i></a>
+
+                <div class="subnav">
+                    <ul class="subnav-item">
+                        <label for=""><b>Thương hiệu</b></label> <br>
+                        <li><a href="#">Iphone</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Oppo</a></li>
+                        <li><a href="#">Vivo</a></li>
+                        <li><a href="#">Vsmart</a></li>
+                        <li><a href="#">Nokia</a></li>
+                        <li><a href="#">Huawei</a></li>
+                        <li><a href="#">Realme</a></li>
+                    </ul>
+
+                    <ul class="subnav-item">
+                        <label for=""><b>Mức giá</b></label> <br>
+                        <li><a href="#">Dưới 1 triệu</a></li>
+                        <li><a href="#">Từ 1 - 3 triệu</a></li>
+                        <li><a href="#">Từ 3 - 7 triệu</a></li>
+                        <li><a href="#">Từ 7 - 12 triệu</a></li>
+                        <li><a href="#">Trên 12 triệu</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Máy tính bảng <i class="ti-angle-down"></i></a>
+
+                <div class="subnav">
+                    <ul class="subnav-item">
+                        <label for=""><b>Thương hiệu</b></label> <br>
+                        <li><a href="#">Apple(iPad)</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Masstel</a></li>
+                        <li><a href="#">Microsoft</a></li>
+                    </ul>
+
+                    <ul class="subnav-item">
+                        <label for=""><b>Mức giá</b></label> <br>
+                        <li><a href="#">Dưới 3 triệu</a></li>
+                        <li><a href="#">Từ 3 - 8 triệu</a></li>
+                        <li><a href="#">Từ 8 - 15 triệu</a></li>
+                        <li><a href="#">Trên 15 triệu</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <a href="#">Phụ kiện <i class="ti-angle-down"></i></a>
+
+                <div class="subnav">
+                    <ul class="subnav-item">
+                        <li><a href="#">Cáp sạc</a></li>
+                        <li><a href="#">Pin dự phòng</a></li>
+                        <li><a href="#">Tai nghe</a></li>
+                        <li><a href="#">Ốp lưng, bao da</a></li>
+                        <li><a href="#">Thẻ nhớ</a></li>
+                        <li><a href="#">Kính cường lực</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li>
+                <a href="#">Trả góp</a>
+            </li>
+            <li>
+                <a href="#">Khuyến mãi</a>
+            </li>
+        </ul>
+
+        <div id="banner">
+
+            <div id="slider">
+                <div id="slides">
+
+                    <!-- radio button start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- radio button end -->
+
+                    <!-- slide image start -->
+                    <div class="slide first">
+                        <img src="./assets/img/slide/slide1.jpeg" alt="">
+                    </div>
+                    <div class="slide ">
+                        <img src="./assets/img/slide/slide2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/slide/slide3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/slide/slide4.jpeg" alt="">
+                    </div>
+                    <!-- slide image end -->
+
+                    <!-- automatic navigation start -->
+                    <div class="navigation-auto">
+                        <div class="btn-auto1"></div>
+                        <div class="btn-auto2"></div>
+                        <div class="btn-auto3"></div>
+                        <div class="btn-auto4"></div>
+                    </div>
+                    <!-- automatic navigation end -->
+
+
+                    <div id="btn-prevSlide" class="btn-slide nextSlide">
+                        <i class="ti-angle-left"></i>
+                    </div>
+
+                    <div id="btn-nextSlide" class="btn-slide prevSlide">
+                        <i class="ti-angle-right"></i>
+                    </div>
+
+                </div>
+                <!-- manual navigation start -->
+                <!-- <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div> -->
+                <!-- manual navigation end -->
+
+
+
+            </div>
+
+            <!-- begin:js for slider -->
+            <script>
+                // $(document).ready(function () {
+                //     const mySlide = document.querySelectorAll('.slide');
+                //     var count = 1;
+
+                //     $('#slides').hover(function () {
+                //         // hiện thị nút next và prev khi hover lên slide
+                //         document.getElementById('btn-nextSlide').style.display = "flex";
+                //         if (count == 1)
+                //             document.getElementById('btn-prevSlide').style.display = "none";
+                //         else
+                //             document.getElementById('btn-prevSlide').style.display = "flex";
+                //     })
+
+                //     $('#slides').mouseleave(function () {
+                //         //ẩn nút next và prev khi k hover lên slide
+                //         document.getElementById('btn-nextSlide').style.display = "none";
+                //         document.getElementById('btn-prevSlide').style.display = "none";
+                //     })
+
+
+                //     let timer = setInterval(autoSlide, 5000);
+
+                //     function autoSlide() {
+                //         document.getElementById('radio' + count).checked = true;
+                //         count++;
+                //         if (count > mySlide.length) {
+                //             count = 1;
+                //         }
+                //     }
+
+                //     // function resetTimer() {
+                //     //     clearInterval(timer);
+                //     //     timer = setInterval(autoSlide, 5000);
+                //     // }
+
+                //     $('#btn-nextSlide').click(function () {
+                //         clearInterval(timer);
+
+                //         count++;
+                //         if (count > mySlide.length) {
+                //             count = 1;
+                //             document.getElementById('btn-prevSlide').style.display = "none";
+                //         }
+                //         if (count != 1)
+                //             document.getElementById('btn-prevSlide').style.display = "flex";
+
+                //         document.getElementById('radio' + count).checked = true;
+
+                //         timer = setInterval(autoSlide, 5000);
+                //         // resetTimer()
+                //     })
+
+                //     $('#btn-prevSlide').click(function () {
+                //         clearInterval(timer);
+                //         count--;
+                //         if (count < 1) {
+                //             count = 1;
+                //             return 0;
+                //         }
+
+                //         document.getElementById('radio' + count).checked = true;
+
+                //         timer = setInterval(autoSlide, 5000);
+                //         // resetTimer()
+                //     })
+
+                //     $('.product').on("mouseenter", function () {
+                //         // $(this).css("z-index", "20");
+                //         $(this).css("box-shadow", "0 0 8px rgba(0, 0, 0, 0.2), 0px 8px 8px rgba(0, 0, 0, 0.2)");
+                //         $(this).css("border", "1px solid rgba(0, 0, 0, 0.1)");
+                //     }).on("mouseleave", function () {
+                //         $(".product").css("box-shadow", "none");
+                //         $(this).css("border", "none");
+
+                //     });
+
+
+                // })
+            </script>
+            <!-- end:js for slider -->
+
+            <div id="subBanner">
+                <div class="subBanner-item">
+                    <img src="./assets/img/subBanner/image1.jpg" alt="">
+                </div>
+                <div class="subBanner-item">
+                    <img src="./assets/img/subBanner/image3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="row product-type w-77p mt-20 bs-02" id="phone-popular">
+                <!-- <div class="row"> -->
+                    <label for="" class="label-type">Điện thoại nổi bật</label> <br>
+                <!-- </div> -->
+                <!-- <div class="row"> -->
+                    <!-- <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img mt-8"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                <!-- </div> -->
+
+                <!-- <div class="row"> -->
+                    <!-- <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img mt-8"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="product">
+                            <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img"
+                                alt="">
+                            <div class="product-info">
+                                <h3 class="product-name mt-10">Product Name</h3>
+                                <p class="product-price mt-10">10,000,000 VND</p>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+
+
+            </div>
+
+            <div class="row product-type w-77p mt-20 bs-02" id="tablet">
+                <!-- <div class="row"> -->
+                    <label for="" class="label-type">Máy tính bảng nổi bật</label> <br>
+                <!-- </div> -->
+                <!-- <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/tablet/samsung/samsung-galaxy-tab-s7-gold-new-600x600.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="row product-type w-77p mt-20 bs-02" id="phone-accessories">
+                <label for="" class="label-type">Phụ kiện</label> <br>
+                <!-- <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-5">
+                    <div class="product">
+                        <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg" class="product-img" alt="">
+                        <div class="product-info">
+                            <h3 class="product-name mt-10">Product Name</h3>
+                            <p class="product-price mt-10">10,000,000 VND</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
     </div>
+
+
 </body>
 
 </html>
