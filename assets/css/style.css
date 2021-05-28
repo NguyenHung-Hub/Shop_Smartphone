@@ -39,18 +39,15 @@ body{
 .mt-10{
     margin-top: 10px;
 }
-<<<<<<< HEAD
 .mt-16{
     margin-top: 16px;
-=======
-
+}
 .btnSearch{
     width: 40px;
     padding:10px 0 8px 10px;
     border-radius:0 20px 20px 0;
 
     background: transparent;    
->>>>>>> 2b7bb218eac95a7febb2b30ba2ff587332f434de
 }
 .mt-20{
     margin-top: 20px;
