@@ -1,4 +1,4 @@
-export const Iphone = [
+export const iphone = [
     {
         product_name: 'Iphone 12 Pro Max 128GB',
         price: '30.990.000',

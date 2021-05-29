@@ -63,3 +63,7 @@
 .product-price {
   margin-left: 8px;
 }
+
+#list-product-type {
+  display: none;
+}

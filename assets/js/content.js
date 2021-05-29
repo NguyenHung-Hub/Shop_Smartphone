@@ -1,6 +1,24 @@
-import {Iphone, phone_Samsung, tablet_Samsung, iPad, sacDienThoai, pinDuPhong} from './data.js'
+import {iphone, phone_Samsung, tablet_Samsung, iPad, sacDienThoai, pinDuPhong} from './data.js'
 
 // console.log(Iphone[0].product_name);
+
+function insertProduct(id, arr) {
+    for (let i = 0; i < arr.length; i++) {
+        $(id).append(
+            '<div class="col col-5">'
+            + '<div class="product">'
+            + '<img src="' + arr[i].img + '" class="product-img mt-8" alt="">'
+            + '<div class="product-info">'
+            + '<h3 class="product-name mt-10">' + arr[i].product_name + '</h3>'
+            + '<p class="product-price mt-10">' + arr[i].price + ' VND</p>'
+            + '</div>'
+            + '</div>'
+            + '</div>'
+        )
+
+    }
+}
+
 
 $(document).ready(function () {
 
@@ -407,35 +425,35 @@ $(document).ready(function () {
 
     // }
 
-    function insertProduct(id, arr) {
-        for (let i = 0; i < arr.length; i++) {
-            $(id).append(
-                '<div class="col col-5">'
-                + '<div class="product">'
-                + '<img src="' + arr[i].img + '" class="product-img mt-8" alt="">'
-                + '<div class="product-info">'
-                + '<h3 class="product-name mt-10">' + arr[i].product_name + '</h3>'
-                + '<p class="product-price mt-10">' + arr[i].price + ' VND</p>'
-                + '</div>'
-                + '</div>'
-                + '</div>'
-            )
+    // function insertProduct(id, arr) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         $(id).append(
+    //             '<div class="col col-5">'
+    //             + '<div class="product">'
+    //             + '<img src="' + arr[i].img + '" class="product-img mt-8" alt="">'
+    //             + '<div class="product-info">'
+    //             + '<h3 class="product-name mt-10">' + arr[i].product_name + '</h3>'
+    //             + '<p class="product-price mt-10">' + arr[i].price + ' VND</p>'
+    //             + '</div>'
+    //             + '</div>'
+    //             + '</div>'
+    //         )
     
-        }
-    }
+    //     }
+    // }
 
-    insertProduct('#phone-popular', Iphone);
+    insertProduct('#phone-popular', iphone);
     insertProduct('#phone-popular', phone_Samsung);
-    insertProduct('#tablet', iPad);
-    insertProduct('#tablet', tablet_Samsung);
+    insertProduct('#tablet-popular', iPad);
+    insertProduct('#tablet-popular', tablet_Samsung);
     insertProduct('#phone-accessories', sacDienThoai);
     insertProduct('#phone-accessories', pinDuPhong);
 
     //hover vào sản phẩm sau khi thêm sản phẩm
     $('.product').on("mouseenter", function () {
         // $(this).css("z-index", "20");
-        $(this).css("box-shadow", "0 0 8px rgba(0, 0, 0, 0.2), 0px 8px 8px rgba(0, 0, 0, 0.2)");
-        $(this).css("border", "1px solid rgba(0, 0, 0, 0.1)");
+        $(this).css("box-shadow", "0 0 8px rgba(240, 26, 72, 0.4), 0px 8px 8px rgba(240, 26, 72, 0.4)");
+        $(this).css("border", "1px solid rgba(240, 26, 72, 0.1)");
         $(this).css("cursor", "pointer");
         $(this).click(function () {
             console.log("chi tiet sp");
@@ -447,7 +465,7 @@ $(document).ready(function () {
     });
 
 
-
 })   
+export {insertProduct}; 
 
 
