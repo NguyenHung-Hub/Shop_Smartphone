@@ -25,6 +25,7 @@
     <script src="./assets/js/nav_index.js" type="module"></script>
     <script src="./assets/js/content.js" type="module"></script>
     <script src="./assets/js/data.js" type="module"></script>
+    <script src="./assets/js/footer.js" type="module"></script>
 
 </head>
 
@@ -61,8 +62,6 @@
                         <li><a href="#" id="oppo">Oppo</a></li>
                         <li><a href="#" id="vivo">Vivo</a></li>
                         <li><a href="#" id="vsmart">Vsmart</a></li>
-                        <li><a href="#" id="nokia">Nokia</a></li>
-                        <li><a href="#" id="huawei">Huawei</a></li>
                         <li><a href="#" id="realme">Realme</a></li>
                     </ul>
 
@@ -238,36 +237,76 @@
 
             </div>
 
-            <!-- Begin list product type -->
-            <!-- <div id="list-product-type">
-
-                <div class="row product-type w-77p mt-20 bs-02">
-                    <div class="product-list">
-                        <label for="" class="label-type">Iphone</label> <br>
-
-                        <div class="col col-5">
-                            <div class="product">
-                                <img src="./assets/img/product/phone/iphone/iphone-12-violet.jpg"
-                                    class="product-img mt-8" alt="">
-                                <div class="product-info">
-                                    <h3 class="product-name mt-10">Product Name</h3>
-                                    <p class="product-price mt-10">10,000,000 VND</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
-
-
-            <!-- End list product type -->
         </div>
 
         <div id="footer">
+            <div id="info" class="footer-content">
 
-            <div id="content">
+                <div class="switchBoard">
+                    <ul>
+                        <h3>Tổng đài hỗ trợ</h3>
+                        <li>Bảo hành: 1800.1234 (8:00 - 21:00)</li>
+                        <li>Gọi mua: 1800.1234 (7:30 - 22:00)</li>
+                        <li>Kỹ thuật: 1800.1234 (7:30 - 22:00)</li>
+                        <li>Khiếu nại: 1800.1234 (8:00 - 21:30)</li>
+                    </ul>
+                </div>
 
+                <br>
+                <a href="javascript:void(0);" class="icon" onclick="collapseService()">
+                    Thông tin khác
+                    <i class="ti-angle-double-down" id="angle-double-down"></i>
+                    <!-- <i class="ti-angle-double-up" id="angle-double-up"></i> -->
+                </a>
+
+                <div class="service">
+                    <ul>
+                        <li><a href="#">Giới thiệu về công ty</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Quy chế hoạt động</a></li>
+                        <li><a href="#">Kiểm tra hóa đơn điện tử</a></li>
+                        <li><a href="#">Tra cứu thông tin bảo hành</a></li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <ul>
+                        <li><a href="#">Tin tuyển dụng</a></li>
+                        <li><a href="#">Tin khuyến mãi</a></li>
+                        <li><a href="#">Hướng dẫn mua online</a></li>
+                        <li><a href="#">Hướng dẫn mua trả góp</a></li>
+                        <li><a href="#">Chính sách trả góp</a></li>
+                    </ul>
+                </div>
+
+                <div class="service">
+                    <ul>
+                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                        <li><a href="#">Trung tâm bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Liên hệ hợp tác kinh doanh</a></li>
+                    </ul>
+                </div>
+
+                
+
+                <script>
+                    function collapseService() {
+                        var x = document.getElementById("info");
+                        if (x.className === "footer-content") {
+                            x.className += " responsive";
+                            
+                            //đổi chiều mũi tên lên
+                            document.getElementById("angle-double-down").setAttribute("class", "ti-angle-double-up");
+                        } else {
+                            x.className = "footer-content";
+
+                            //đổi chiều mũi tên xuống
+                            document.getElementById("angle-double-down").setAttribute("class", "ti-angle-double-down");
+
+                        }
+                    }
+                </script>
             </div>
         </div>
     </div>

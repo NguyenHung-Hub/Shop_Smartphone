@@ -88,8 +88,189 @@ export const phone_Samsung = [
         price: '32.990.000',
         img: './assets/img/product/phone/samsung/samsunggalaxynote20ultratrangnew-600x600-600x600.jpg'
     },
+    {
+        product_name: 'Samsung A72',
+        price: '11.290.000',
+        img: './assets/img/product/phone/samsung/samsung-galaxy-a72-thumb-balck-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'Samsung A52 5G',
+        price: '10.990.000',
+        img: './assets/img/product/phone/samsung/samsung-galaxy-a52-5g-thumb-black-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'Samsung A51',
+        price: '7.290.000',
+        img: './assets/img/product/phone/samsung/samsung-galaxy-a51-silver-600x600.jpg'
+    },
 ];
 
+export const phone_oppo = [
+    {
+        product_name: 'OPPO Find X3 Pro 5G',
+        price: '26.990.000',
+        img: './assets/img/product/phone/oppo/oppo-find-x3-pro-black-001-1-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO A74 5G',
+        price: '7.490.000',
+        img: './assets/img/product/phone/oppo/oppo-a74-5g-silver-01-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO A74',
+        price: '6.690.000',
+        img: './assets/img/product/phone/oppo/oppo-a74-blue-9-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO A93',
+        price: '5.990.000',
+        img: './assets/img/product/phone/oppo/oppo-a93-den-14-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO A94',
+        price: '7.690.000',
+        img: './assets/img/product/phone/oppo/oppo-a94-black-thumb-600x600-1-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO Reno4 Pro',
+        price: '10.490.000',
+        img: './assets/img/product/phone/oppo/oppo-reno4-pro-trang-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO Reno4',
+        price: '6.990.000',
+        img: './assets/img/product/phone/oppo/oppo-reno4-xanh-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO Reno5 5G',
+        price: '10.990.000',
+        img: './assets/img/product/phone/oppo/oppo-reno5-5g-thumb-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO Reno5 Marvel',
+        price: '8.750.000',
+        img: './assets/img/product/phone/oppo/oppo-reno5-marvel-thumb-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'OPPO Reno5',
+        price: '8.690.000',
+        img: './assets/img/product/phone/oppo/oppo-reno5-trang-600x600-1-600x600.jpg'
+    }
+];
+
+export const phone_vivo = [
+    {
+        product_name: 'Vivo V20',
+        price: '7.790.000',
+        img: './assets/img/product/phone/vivo/vivo-v20-600-xanh-hong-2-600x600.jpg'
+    },
+    
+    {
+        product_name: 'Vivo V21 5G',
+        price: '9.990.000',
+        img: './assets/img/product/phone/vivo/vivo-v21-5g-xanh-den-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo Y72 5G',
+        price: '7.990.000',
+        img: './assets/img/product/phone/vivo/vivo-y72-5g-blue-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo V20 (2021)',
+        price: '7.790.000',
+        img: './assets/img/product/phone/vivo/vivov202021den-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo V20 SE',
+        price: '6.390.000',
+        img: './assets/img/product/phone/vivo/vivo-v20-se-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo Y21s',
+        price: '3.790.000',
+        img: './assets/img/product/phone/vivo/vivo-y12s-den-new-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo Y20 (2021)',
+        price: '3.690.000',
+        img: './assets/img/product/phone/vivo/vivo-y20-2021-blue-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo Y20s',
+        price: '4.690.000',
+        img: './assets/img/product/phone/vivo/vivo-y20s-xanh-1-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo Y50',
+        price: '5.190.000',
+        img: './assets/img/product/phone/vivo/vivo-y50-xanh-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'Vivo Y51 (2020)',
+        price: '5.790.000',
+        img: './assets/img/product/phone/vivo/vivo-y51-bac-600x600-600x600.jpg'
+    },
+    
+];
+
+export const phone_vsmart = [
+    {
+        product_name: 'Vsmart Aris Pro',
+        price: '6.990.000',
+        img: './assets/img/product/phone/vsmart/vsmart-aris-pro-green-600jpg-600x600.jpg'
+    },
+    {
+        product_name: 'Vsmart Aris 128G',
+        price: '5.990.000',
+        img: './assets/img/product/phone/vsmart/vsmart-aris-xam-new-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'Vsmart Aris 64G',
+        price: '5.890.000',
+        img: './assets/img/product/phone/vsmart/vsmart-aris-xanhduong-600x600-600x600.jpg'
+    },
+    {
+        product_name: 'Vsmart Live4 ',
+        price: '4.090.000',
+        img: './assets/img/product/phone/vsmart/vsmart-live-4-den-600x600.jpg'
+    },
+    {
+        product_name: 'Vsmart Live4 ',
+        price: '3.890.000',
+        img: './assets/img/product/phone/vsmart/vsmart-live-4-xanh-la-600x600.jpg'
+    },
+];
+
+export const phone_realme = [
+    {
+        product_name: 'Realme 6 Pro',
+        price: '6.990.000',
+        img: './assets/img/product/phone/realme/realme-6-pro-do-600x600.jpg'
+    },
+    {
+        product_name: 'Realme 7 Pro',
+        price: '8.000.000',
+        img: './assets/img/product/phone/realme/realme-7-pro-bac-600x600.jpg'
+    },
+    {
+        product_name: 'Realme 8 Pro',
+        price: '8.990.000',
+        img: './assets/img/product/phone/realme/realme-8-pro-balck-600x600.jpg'
+    },
+    {
+        product_name: 'Realme 8',
+        price: '7.290.000',
+        img: './assets/img/product/phone/realme/realme-8-silver-600x600.jpg'
+    },
+    {
+        product_name: 'Realme C12',
+        price: '3.190.000',
+        img: './assets/img/product/phone/realme/realme-c12-do-13-600x600.jpg'
+    },
+];
+
+
+// tablet
 export const tablet_Samsung = [
     {
         product_name: 'Samsung Galaxy Tab S7',

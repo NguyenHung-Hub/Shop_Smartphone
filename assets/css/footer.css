@@ -1,5 +1,157 @@
 #footer {
-    width: 100%;
-    height: 350px;
-    background-color: #EE0033;
+  width: 100%;
+  min-height: 270px;
+  background-color: #f01a48;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  height: 100%;
+}
+
+.switchBoard {
+    padding: 0 40px 0 0;
+  color: #fff;
+}
+.switchBoard h3 {
+  text-align: center;
+  margin-bottom: 4px;
+  color: #ffff80;
+}
+.switchBoard ul {
+  line-height: 1.6;
+
+  list-style-type: none;
+}
+
+.icon {
+  display: none;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  width: 50%;
+
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.icon:hover {
+  width: 52%;
+  color: #ffff80;
+}
+
+.icon i {
+  font-size: 14px;
+}
+.service {
+  margin: 0 10px;
+  padding: 20px;
+}
+.service ul {
+  list-style-type: none;
+}
+.service ul li {
+  color: #fff;
+}
+.service ul li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.6;
+}
+.service ul li:hover a {
+  color: #ffff80;
+  text-decoration: underline;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1100px) {
+  .service {
+    margin: 0 8px;
+    padding: 10px 12px;
+  }
+
+  .service ul li a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .service {
+    margin: 0 8px;
+    padding: 8px 12px;
+  }
+
+  .service ul li a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 680px) {
+    #footer{
+        min-height: 220px;
+    }
+  .switchBoard {
+    padding: 16px;
+  }
+
+  .switchBoard h3 {
+    padding: 8px;
+    font-size: 20px;
+  }
+  .switchBoard ul {
+      font-size: 18px;
+    list-style-type: none;
+  }
+
+  /* .service cũ ẩn đi */
+  .service {
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content a.icon {
+    display: block;
+  }
+
+  /* .service mới */
+  .footer-content.responsive .service {
+    display: flex;
+    width: 50%;
+  }
+
+  .footer-content.responsive .service a{
+    font-size: 18px;
+}
+  
+}
+
+@media only screen and (max-width: 576px) {
+}
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 414px) {
 }

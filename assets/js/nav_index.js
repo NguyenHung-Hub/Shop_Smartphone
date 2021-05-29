@@ -1,4 +1,5 @@
-import { iphone, phone_Samsung, tablet_Samsung, iPad, sacDienThoai, pinDuPhong } from './data.js'
+import { iphone, phone_Samsung, phone_oppo, phone_vivo, phone_vsmart, phone_realme,
+    tablet_Samsung, iPad, sacDienThoai, pinDuPhong } from './data.js'
 
 import { insertProduct } from './content.js'
 
@@ -64,6 +65,44 @@ $(document).ready(function () {
 
 
     })
+    $("#oppo").click(function () {
+        $("#phone-popular").hide();
+        $("#tablet-popular").hide();
+        $("#phone-accessories").hide();
+        $("#content").show();
+        insertProductType('#content', phone_oppo, 'Oppo', 'type-oppo');
+
+
+    })
+    $("#vivo").click(function () {
+        $("#phone-popular").hide();
+        $("#tablet-popular").hide();
+        $("#phone-accessories").hide();
+        $("#content").show();
+        insertProductType('#content', phone_vivo, 'Vivo', 'type-vivo');
+
+
+    })
+    $("#vsmart").click(function () {
+        $("#phone-popular").hide();
+        $("#tablet-popular").hide();
+        $("#phone-accessories").hide();
+        $("#content").show();
+        insertProductType('#content', phone_vsmart, 'Vsmart', 'type-smart');
+
+
+    })
+    $("#realme").click(function () {
+        $("#phone-popular").hide();
+        $("#tablet-popular").hide();
+        $("#phone-accessories").hide();
+        $("#content").show();
+        insertProductType('#content', phone_realme, 'Realme', 'type-realme');
+
+
+    })
+
+
     $("#ipad").click(function () {
         $("#phone-popular").hide();
         $("#tablet-popular").hide();

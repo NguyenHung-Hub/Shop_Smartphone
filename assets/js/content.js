@@ -1,4 +1,5 @@
-import {iphone, phone_Samsung, tablet_Samsung, iPad, sacDienThoai, pinDuPhong} from './data.js'
+import { iphone, phone_Samsung, phone_oppo, phone_vivo, phone_vsmart, phone_realme,
+     tablet_Samsung, iPad, sacDienThoai, pinDuPhong } from './data.js'
 
 // console.log(Iphone[0].product_name);
 
@@ -87,7 +88,7 @@ $(document).ready(function () {
         // resetTimer()
     })
 
-    /*end slider*/ 
+    /*end slider*/
 
     // let Iphone = [
     //     {
@@ -377,7 +378,7 @@ $(document).ready(function () {
     //         price: '690.000',
     //         img: './assets/img/product/accessories/pinDuPhong/polymer-10000mah-xiaomi-ultra-compact-avt-1-600x600.jpg'
     //     },
-        
+
     // ];
 
     // for (let i = 0; i < pinDuPhong.length; i++) {
@@ -438,12 +439,18 @@ $(document).ready(function () {
     //             + '</div>'
     //             + '</div>'
     //         )
-    
+
     //     }
     // }
 
     insertProduct('#phone-popular', iphone);
     insertProduct('#phone-popular', phone_Samsung);
+    insertProduct('#phone-popular', phone_oppo);
+    insertProduct('#phone-popular', phone_vivo);
+    insertProduct('#phone-popular', phone_vsmart);
+    insertProduct('#phone-popular', phone_realme);
+
+
     insertProduct('#tablet-popular', iPad);
     insertProduct('#tablet-popular', tablet_Samsung);
     insertProduct('#phone-accessories', sacDienThoai);
@@ -465,7 +472,7 @@ $(document).ready(function () {
     });
 
 
-})   
-export {insertProduct}; 
+})
+export { insertProduct };
 
 
