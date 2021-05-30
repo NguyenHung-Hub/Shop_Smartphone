@@ -1,12 +1,14 @@
-import { iphone, phone_Samsung, phone_oppo, phone_vivo, phone_vsmart, phone_realme,
-    tablet_Samsung, iPad, sacDienThoai, pinDuPhong } from './data.js'
+import {
+    iphone, phone_Samsung, phone_oppo, phone_vivo, phone_vsmart, phone_realme,
+    tablet_Samsung, iPad, sacDienThoai, pinDuPhong
+} from './data.js'
 
 import { insertProduct } from './content.js'
 
 function insertProductType(idParent, arr, nameType, idChild) {
 
     // xoá id đã có
-    var idRemove = idParent +" > " + "#" + idChild;
+    var idRemove = idParent + " > " + "#" + idChild;
     $(idRemove).remove();
 
     // $(idParent + ":first-child").prepend()
@@ -23,10 +25,10 @@ function insertProductType(idParent, arr, nameType, idChild) {
     //     + '</div>'
     // );
 
-    
+
 
     for (let i = 0; i < arr.length; i++) {
-        $("#"+idChild).append(
+        $("#" + idChild).append(
             '<div class="col col-5">'
             + '<div class="product">'
             + '<img src="' + arr[i].img + '" class="product-img mt-8" alt="">'
@@ -41,6 +43,7 @@ function insertProductType(idParent, arr, nameType, idChild) {
 
     }
 }
+
 
 $(document).ready(function () {
 

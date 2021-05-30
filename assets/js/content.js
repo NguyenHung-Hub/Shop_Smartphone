@@ -462,13 +462,17 @@ $(document).ready(function () {
         $(this).css("box-shadow", "0 0 8px rgba(240, 26, 72, 0.4), 0px 8px 8px rgba(240, 26, 72, 0.4)");
         $(this).css("border", "1px solid rgba(240, 26, 72, 0.1)");
         $(this).css("cursor", "pointer");
-        $(this).click(function () {
-            console.log("chi tiet sp");
-        });
+        // $(this).click(function () {
+        //     console.log("chi tiet sp");
+        // });
     }).on("mouseleave", function () {
         $(".product").css("box-shadow", "none");
         $(this).css("border", "none");
 
+    });
+
+    $(".product").click(function () {
+        console.log("chi tiet sp");
     });
 
 
