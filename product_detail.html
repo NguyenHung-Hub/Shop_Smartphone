@@ -53,7 +53,7 @@
         </div>
 
 
-        <ul id="nav">
+        <!-- <ul id="nav">
             <li>
                 <a href="#" id="phone">Điện thoại <i class="ti-angle-down"></i></a>
 
@@ -122,7 +122,108 @@
             <li>
                 <a href="#">Khuyến mãi</a>
             </li>
-        </ul>
+        </ul> -->
+
+        <div id="nav">
+            <ul id="nav-body" class="nav-content">
+                <li><a href="javascript:void(0);" id="pseudo-nav-item"></a></li>
+                <li>
+                    <a href="#" id="phone">Điện thoại <i class="ti-angle-down"></i></a>
+
+                    <div class="subnav">
+                        <ul class="subnav-item">
+                            <label for=""><b>Thương hiệu</b></label> <br>
+                            <li><a href="#" id="iphone">Iphone</a></li>
+                            <li><a href="#" id="samsung">Samsung</a></li>
+                            <li><a href="#" id="oppo">Oppo</a></li>
+                            <li><a href="#" id="vivo">Vivo</a></li>
+                            <li><a href="#" id="vsmart">Vsmart</a></li>
+                            <li><a href="#" id="realme">Realme</a></li>
+                        </ul>
+
+                        <ul class="subnav-item">
+                            <label for=""><b>Mức giá</b></label> <br>
+                            <li><a href="#">Dưới 1 triệu</a></li>
+                            <li><a href="#">Từ 1 - 3 triệu</a></li>
+                            <li><a href="#">Từ 3 - 7 triệu</a></li>
+                            <li><a href="#">Từ 7 - 12 triệu</a></li>
+                            <li><a href="#">Trên 12 triệu</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Máy tính bảng <i class="ti-angle-down"></i></a>
+
+                    <div class="subnav">
+                        <ul class="subnav-item">
+                            <label for=""><b>Thương hiệu</b></label> <br>
+                            <li><a href="#" id="ipad">Apple(iPad)</a></li>
+                            <li><a href="#" id="tablet-samsung">Samsung</a></li>
+                            <li><a href="#" id="tablet-lenovo">Lenovo</a></li>
+                            <li><a href="#" id="tablet-masstel">Masstel</a></li>
+                            <li><a href="#" id="tablet-microsoft">Microsoft</a></li>
+                        </ul>
+
+                        <ul class="subnav-item">
+                            <label for=""><b>Mức giá</b></label> <br>
+                            <li><a href="#">Dưới 3 triệu</a></li>
+                            <li><a href="#">Từ 3 - 8 triệu</a></li>
+                            <li><a href="#">Từ 8 - 15 triệu</a></li>
+                            <li><a href="#">Trên 15 triệu</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#">Phụ kiện <i class="ti-angle-down"></i></a>
+
+                    <div class="subnav">
+                        <ul class="subnav-item">
+                            <li><a href="#">Cáp sạc</a></li>
+                            <li><a href="#">Pin dự phòng</a></li>
+                            <li><a href="#">Tai nghe</a></li>
+                            <li><a href="#">Ốp lưng, bao da</a></li>
+                            <li><a href="#">Thẻ nhớ</a></li>
+                            <li><a href="#">Kính cường lực</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Trả góp</a>
+                </li>
+                <li>
+                    <a href="#">Khuyến mãi</a>
+                </li>
+
+                <!-- <a href="javascript:void(0);" class="menu-nav" onclick="navResponsive();"><i>Menu</i></a> -->
+            </ul>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="ti-menu"></i>
+            </div>
+        </div>
+
+        <script>
+            var headerMenu = document.getElementById('nav-body');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var navHeight = document.getElementById('nav-body');
+            mobileMenu.onclick = function () {
+                var isClose = headerMenu.clientHeight === 40;
+                if (isClose) {
+                    headerMenu.style.height = 'auto';
+                    console.log("456")
+                } else {
+                    headerMenu.style.height = '40px';
+                    console.log("4567")
+
+                }
+
+                console.log(headerMenu)
+
+            }
+
+        </script>
 
 
 

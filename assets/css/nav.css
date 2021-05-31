@@ -1,4 +1,3 @@
-
 #nav {
   position: relative;
 }
@@ -11,6 +10,7 @@
 
   width: 100%;
   height: 40px;
+  overflow: visible;
 }
 
 #nav-body > li {
@@ -18,7 +18,13 @@
   position: relative;
 }
 
+/* ẩn nav-item giả */
 #nav-body > li:first-child {
+  display: none;
+}
+
+#nav-body > li:first-child a {
+  cursor: default;
 }
 
 #nav-body li a {
@@ -88,27 +94,67 @@
   width: 40px;
 
   border: 1px solid #ccc;
+  border-radius: 4px;
   z-index: 9;
 }
 .mobile-menu-btn:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 @media only screen and (min-width: 1024px) {
-
 }
 @media only screen and (max-width: 1023px) {
 }
 @media only screen and (max-width: 992px) {
+  #nav-body .subnav {
+    min-width: 480px !important;
+  }
+
+  #nav-body .subnav-item {
+    /* min-width: 480px; */
+
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #nav-body .subnav {
+    min-width: 400px !important;
+  }
+
+  /* #nav-body .subnav-item:nth-child(3) {
+    min-width: 400px;
+
+  } */
 }
 
 @media only screen and (max-width: 768px) {
+  #nav-body {
+    padding-left: 7%;
+  }
+
+  #nav-body .subnav {
+    min-width: 320px !important;
+  }
+
+  #nav-body li a {
+    padding: 0 18px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #nav-body {
+    padding-left: 3%;
+  }
+
+  #nav-body li a {
+    padding: 0 16px 0 0;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   #nav-body {
     padding-left: 0;
+    overflow: hidden;
   }
 
   #nav-body > li {

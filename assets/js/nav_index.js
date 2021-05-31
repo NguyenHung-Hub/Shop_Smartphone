@@ -126,5 +126,16 @@ $(document).ready(function () {
     })
 
 
+    $(window).resize(function(){
+ 
+        var width = $(window).width();
+        // console.log(width);
+        if (width <= 576){
+            $('.icon-down').removeClass('ti-angle-down');
+        }
+        else{
+            $('.icon-down').addClass('ti-angle-down');
+        }
+    });
 
 })
