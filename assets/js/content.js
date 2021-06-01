@@ -24,7 +24,10 @@ function insertProduct(id, arr) {
 $(document).ready(function () {
 
     const mySlide = document.querySelectorAll('.slide');
-    var count = 1;
+    // console.log(mySlide)
+
+    if (mySlide.length > 0) {
+        var count = 1;
 
     $('#slides').hover(function () {
         // hiện thị nút next và prev khi hover lên slide
@@ -89,6 +92,8 @@ $(document).ready(function () {
     })
 
     /*end slider*/
+    }
+    
 
     // let Iphone = [
     //     {

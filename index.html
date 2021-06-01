@@ -22,10 +22,13 @@
     <link rel="stylesheet" href="./assets/css/content.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 
+    <link rel="stylesheet" href="./assets/css/iconFixed.css">
+
     <script src="./assets/js/nav_index.js" type="module"></script>
     <script src="./assets/js/content.js" type="module"></script>
     <script src="./assets/js/data.js" type="module"></script>
     <script src="./assets/js/footer.js" type="module"></script>
+    <script src="./assets/js/iconFixed.js" type="module"></script>
 
 </head>
 
@@ -149,7 +152,7 @@
 
             }
 
-            
+
 
         </script>
 
@@ -341,6 +344,44 @@
                 </script>
             </div>
         </div>
+
+        <div id="message-icon">
+            <img src="./assets/img/icon-message/conversation64.png" alt="message" id="mesage-img">
+        </div>
+
+        <div id="message-box">
+            <div class="message-box-head">
+                <label for="">HoangHungStore <br>
+                    <p>Chúng tôi sẵn sàng hỗ trợ bạn</p>
+                </label>
+                <i class="ti-close" id="close-mesage-btn"></i>
+            </div>
+
+            <div class="message-box-content">
+
+                <div class="message-box-input">
+                    <label for="">Họ và tên </label> <span class="text-danger">*</span> <br>
+                    <input type="text" id="txtCustomer">
+                </div>
+                <div class="message-box-input">
+                    <label for="">Số điện thoại</label> <span class="text-danger">*</span> <br>
+                    <input type="number" id="txtCustomerPhone">
+                </div>
+                <div class="message-box-input">
+                    <label for="">Tin nhắn</label> <span class="text-danger">*</span> <br>
+                   <textarea name="" id="txtMessage" cols="30" rows="10"></textarea>
+                </div>
+
+
+
+            </div>
+
+            <input type="button" value="Để lại tin nhắn" id="send-message-btn">
+        </div>
+
+        <a href="#" class="btnGoTop">
+            <i class="ti-arrow-circle-up"></i>
+        </a>
     </div>
 
 </body>
