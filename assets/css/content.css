@@ -7,7 +7,7 @@
   width: 100%;
   /* height: 700px; */
 
-  margin: 20px 0;
+  margin: 20px 0 ;
 
   z-index: 1;
 }
@@ -43,7 +43,7 @@
 .product {
   padding-top: 16px;
   background-color: #fff;
-  border: 1px solid rgba(136, 136, 136, 0.2) !important;
+  border: 1px solid rgba(136, 136, 136, 0.2) ;
   box-shadow: none;
 }
 
@@ -56,6 +56,7 @@
   width: 100%;
   display: block;
 }
+
 
 .product-name {
   margin-left: 8px;

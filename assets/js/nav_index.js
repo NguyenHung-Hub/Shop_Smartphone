@@ -11,8 +11,6 @@ function insertProductType(idParent, arr, nameType, idChild) {
     var idRemove = idParent + " > " + "#" + idChild;
     $(idRemove).remove();
 
-    // $(idParent + ":first-child").prepend()
-
     $(idParent).prepend(
         '<div class="row product-type w-77p mt-20 bs-02" id="' + idChild + '">'
         + '<label for="" class="label-type">' + nameType + '</label> <br>'
@@ -29,6 +27,16 @@ function insertProductType(idParent, arr, nameType, idChild) {
 
     for (let i = 0; i < arr.length; i++) {
         $("#" + idChild).append(
+            // '<div class="col col-5">'
+            // + '<div class="product">'
+            // + '<img src="' + arr[i].img + '" class="product-img mt-8" alt="">'
+            // + '<div class="product-info">'
+            // + '<h3 class="product-name mt-10">' + arr[i].product_name + '</h3>'
+            // + '<p class="product-price mt-10">' + arr[i].price + ' VND</p>'
+            // + '</div>'
+            // + '</div>'
+            // + '</div>'
+
             '<div class="col col-5">'
             + '<div class="product">'
             + '<img src="' + arr[i].img + '" class="product-img mt-8" alt="">'
@@ -42,8 +50,8 @@ function insertProductType(idParent, arr, nameType, idChild) {
         )
 
     }
-}
 
+}
 
 $(document).ready(function () {
 
@@ -51,10 +59,19 @@ $(document).ready(function () {
 
     // })
     $("#iphone").click(function () {
-        $("#phone-popular").hide();
-        $("#tablet-popular").hide();
-        $("#phone-accessories").hide();
-        $("#content").show();
+        // $("#phone-popular").hide();
+        // $("#tablet-popular").hide();
+        // $("#phone-accessories").hide();
+        // $("#content").show();
+
+        $("#product-container").hide();
+
+        // console.log($("#product-container").length)
+
+        // if ($("#product-container").length) {
+        //     insertProductType2('#content', iphone, 'Iphone (Apple)', 'type-iphone');
+
+        // } else {
         insertProductType('#content', iphone, 'Iphone (Apple)', 'type-iphone');
 
     })
@@ -126,16 +143,19 @@ $(document).ready(function () {
     })
 
 
-    $(window).resize(function(){
- 
+
+
+
+    $(window).resize(function () {
+
         var width = $(window).width();
         // console.log(width);
-        if (width <= 576){
+        if (width <= 576) {
             $('.icon-down').removeClass('ti-angle-down');
         }
-        else{
+        else {
             $('.icon-down').addClass('ti-angle-down');
         }
-    });
+    });    
 
 })
