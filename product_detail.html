@@ -33,6 +33,7 @@
     <script src="./assets/js/footer.js" type="module"></script>
     <script src="./assets/js/iconFixed.js" type="module"></script>
     <script src="./assets/js/content_detail.js" type="module"></script>
+    <script src="./assets/js/modal.js" type="module"></script>
 
 
 
@@ -51,6 +52,15 @@
                 <input type="text" placeholder="Tìm kiếm sản phẩm" class="txt-search">
                 <div class="btnSearch">
                     <i class="ti-search"></i>
+                </div>
+            </div>
+
+            <div class="account">
+                <div class="btn-account sign-in" id="btnLogin">
+                    Đăng nhập
+                </div>
+                <div class="btn-account sign-up" id="btnRegister">
+                    Đăng ký
                 </div>
             </div>
 
@@ -429,6 +439,225 @@
         <a href="#" class="btnGoTop">
             <i class="ti-arrow-circle-up"></i>
         </a>
+    </div>
+
+
+    <div class="modal" id="modalRegister">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register form -->
+            <div class="auth-form" id="formRegister">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn-auth-form auth-form__control-back btn--normal" id="btnBackRegister">TRỞ LẠI</button>
+                        <button class="btn-auth-form btn-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials-facebook btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-facebook"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials-google btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-google"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Login form -->
+            <!-- <div class="auth-form" id="formLogin">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn-auth-form auth-form__control-back btn--normal" id="btnBack">TRỞ LẠI</button>
+                        <button class="btn-auth-form btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials-facebook btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-facebook"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials-google btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-google"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="modal" id="modalLogin">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register form -->
+            <!-- <div class="auth-form" id="formRegister">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn-auth-form auth-form__control-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn-auth-form btn-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials-facebook btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-facebook"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials-google btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-google"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Login form -->
+            <div class="auth-form" id="formLogin">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn-auth-form auth-form__control-back btn--normal" id="btnBackLogin">TRỞ LẠI</button>
+                        <button class="btn-auth-form btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials-facebook btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-facebook"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials-google btn-auth-form btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon ti-google"></i>
+
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
