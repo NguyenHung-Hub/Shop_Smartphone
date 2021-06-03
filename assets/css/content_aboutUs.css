@@ -1,0 +1,42 @@
+.aboutUs {
+    padding: 32px 16px;
+}
+
+.member {
+    padding:32px 16px;
+
+    /* background-color: aquamarine; */
+}
+
+.source-link {
+    padding: 16px 8px;
+}
+
+.source-link label{
+    padding: 8px;
+}
+
+.source-link ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.source-link ul li{
+    padding: 8px;
+    margin: 16px 0;
+}
+.source-link ul li a{
+}
+
+
+.source-link ul li a{
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f01a48;
+    border-radius: 4px;
+}
+
+.source-link ul li:hover a{
+    color: #ffff80;
+}

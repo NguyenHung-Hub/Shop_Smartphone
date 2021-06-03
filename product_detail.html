@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./assets/css/iconFixed.css">
 
 
+    <script src="./assets/js/header.js" type="module"></script>
     <script src="./assets/js/nav_index.js" type="module"></script>
     <script src="./assets/js/content.js" type="module"></script>
     <script src="./assets/js/data.js" type="module"></script>
@@ -342,7 +343,7 @@
 
                 <div class="service">
                     <ul>
-                        <li><a href="#">Giới thiệu về công ty</a></li>
+                        <li><a href="./aboutUs.html">Giới thiệu về công ty</a></li>
                         <li><a href="#">Chính sách bảo mật</a></li>
                         <li><a href="#">Quy chế hoạt động</a></li>
                         <li><a href="#">Kiểm tra hóa đơn điện tử</a></li>
@@ -389,6 +390,40 @@
                     }
                 </script>
             </div>
+        </div>
+
+        <div id="message-icon">
+            <img src="./assets/img/icon-message/comments64.png" alt="message" id="mesage-img">
+        </div>
+
+        <div id="message-box">
+            <div class="message-box-head">
+                <label for="">HoangHungStore <br>
+                    <p>Chúng tôi sẵn sàng hỗ trợ bạn</p>
+                </label>
+                <i class="ti-close" id="close-mesage-btn"></i>
+            </div>
+
+            <div class="message-box-content">
+
+                <div class="message-box-input">
+                    <label for="">Họ và tên </label> <span class="text-danger">*</span> <br>
+                    <input type="text" id="txtCustomer">
+                </div>
+                <div class="message-box-input">
+                    <label for="">Số điện thoại</label> <span class="text-danger">*</span> <br>
+                    <input type="number" id="txtCustomerPhone">
+                </div>
+                <div class="message-box-input">
+                    <label for="">Tin nhắn</label> <span class="text-danger">*</span> <br>
+                    <textarea name="" id="txtMessage" cols="30" rows="10"></textarea>
+                </div>
+
+
+
+            </div>
+
+            <input type="button" value="Để lại tin nhắn" id="send-message-btn">
         </div>
 
         <a href="#" class="btnGoTop">

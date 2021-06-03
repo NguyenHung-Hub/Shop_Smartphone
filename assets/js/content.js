@@ -36,11 +36,11 @@ function insertProduct(id, arr) {
 // }
 
 
-var path_img_info ='';
-var path_img_detail ='';
+var path_img_info = '';
+var path_img_detail = '';
 
 function handleSubmit(path) {
-    const  x = path;
+    const x = path;
     localStorage.setItem("PATH_IMG_INFO", x);
     console.log("luu local")
 
@@ -49,7 +49,7 @@ function handleSubmit(path) {
 
 function saveLocal(x) {
     localStorage.setItem("ID_PRODUCT", x);
-    return;   
+    return;
 }
 
 $(document).ready(function () {
@@ -147,9 +147,11 @@ $(document).ready(function () {
         $(this).css("box-shadow", "0 0 8px rgba(240, 26, 72, 0.4), 0px 8px 8px rgba(240, 26, 72, 0.4)");
         $(this).css("border", "1px solid rgba(240, 26, 72, 0.1)");
         $(this).css("cursor", "pointer");
-        // $(this).click(function () {
-        //     console.log("chi tiet sp");
-        // });
+        $(this).click(function () {
+            console.log("chi tiet sp");
+            saveLocal($(this).attr('id'))
+            window.location = '../product_detail.html';
+        });
         // console.log("dang hover")
     }).on("mouseleave", ".product", function () {
         $(".product").css("box-shadow", "none");
@@ -157,8 +159,8 @@ $(document).ready(function () {
 
     });
 
-    $(".product").click(function () {
-        console.log($(this).attr('id'));
+    // $(".product").click(function () {
+    //     console.log($(this).attr('id'));
 
         // let id_pro = $(this).attr('id');
         // // let path_img_info = '';
@@ -171,7 +173,7 @@ $(document).ready(function () {
         //         console.log("giong")
         //         console.log(path_img_info)
 
-                
+
         //         handleSubmit(path_img_info);
         //     }
         // }
@@ -181,15 +183,15 @@ $(document).ready(function () {
 
         // //load trang mới go back được
 
-        saveLocal($(this).attr('id'))
-        window.location = '../product_detail.html';
+        // saveLocal($(this).attr('id'))
+        // window.location = '../product_detail.html';
 
 
-    });
+    // });
 
 
 })
 
-export { insertProduct};
+export { insertProduct };
 
 

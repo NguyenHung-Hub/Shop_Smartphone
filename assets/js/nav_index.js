@@ -38,7 +38,7 @@ function insertProductType(idParent, arr, nameType, idChild) {
             // + '</div>'
 
             '<div class="col col-5">'
-            + '<div class="product">'
+            + '<div class="product"id="' + arr[i].product_id + '">'
             + '<img src="' + arr[i].img + '" class="product-img mt-8" alt="">'
             + '<div class="product-info">'
             + '<h3 class="product-name mt-10">' + arr[i].product_name + '</h3>'
